@@ -8,6 +8,16 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="atividades"/>
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1"/>
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="br.com.filipepinato.atividadesdiarias.model"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,7 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AtividadeActivity"></activity>
+        <activity android:name=".AtividadesActivity"></activity>
     </application>
 
 </manifest>
